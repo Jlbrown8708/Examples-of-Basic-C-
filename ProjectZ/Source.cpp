@@ -13,7 +13,7 @@ using namespace std;
 
 //int main() {
 
-	///////////////////////////////////////////// Converting char to int ////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////// Converting char to int ////////////////////////////////////////////////////////////////
 
 		/*char i1, i2, i3, i4, i5;
 		cout << "please enter 5 lettters to be coverted to a number " << std::endl;
@@ -22,7 +22,7 @@ using namespace std;
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
-		///////// Entering code to define between odd and even using a % to show if its divisible by 2 using a if else statement //////
+//////////////////// Entering code to define between odd and even using a % to show if its divisible by 2 using a if else statement //////
 
 		/*int number;
 		cout << "please enter whole number"<<std::endl;
