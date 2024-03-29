@@ -187,12 +187,11 @@ using namespace std;
 //////////////////////////////////////////////////////////////////While loops////////////////////////////////////////////////////////////
 
 		/*int counter = 100;
-		while (counter <= 500)
-		{
-			if (counter % 3 == 0 && counter % 5 == 0)
-				cout << counter << " is divisible by 3 and 5\n";
-			counter++;
 		
+		while (counter <= 500)
+		{	if (counter % 3 == 0 && counter % 5 == 0)
+				cout << counter << " is divisible by 3 and 5\n";
+				counter++;
 		}
 		
 		/// Example 2
@@ -525,22 +524,15 @@ using namespace std;
 
 	int main() 
 	{
-
-		
 		float movement;
 		DoggyMovement status = DM_Jump; // using staus and movement in place of move and speed to avoid the same word and create confusion
 
-
-		
-		
 		Updatedmovementspeed(status, movement); 
 
 		std::cout << "movements speed = " << movement << std::endl;
 
 		system("pause");
-
 	}
-
 
 	void Updatedmovementspeed(DoggyMovement move, float& speed) {
 
@@ -572,11 +564,9 @@ using namespace std;
 		int level;
 		int power;
 		float Health;
-
 	};
 
-
-	Player Joe = { "Joe", 500, 200, 50 };
+		Player Joe = { "Joe", 500, 200, 50 };
 
 
 
@@ -587,8 +577,6 @@ using namespace std;
 		std::cout << "Joes Power is " << Joe.power << std::endl;
 		std::cout << "Joes Health is " << Joe.Health << std::endl;
 	};
-
-
 
 	int main() {
 
@@ -768,8 +756,6 @@ using namespace std;
 		std::cout << "Name " << Name << std::endl;
 		std::cout << "Age " << Age << std::endl;
 		std::cout << "Health " << Health << std::endl;
-
-
 	}
 
 	Yorkie::Yorkie() {
@@ -778,11 +764,9 @@ using namespace std;
 	Health = 110;
 	}
 
-
 	void Yorkie::SetName(std::string name) {
 
 		Name = name;
-
 	}
 
 	std::string Yorkie::GetName() {
@@ -1030,3 +1014,4 @@ using namespace std;
 		system("pause>0");
 		return 0;
 	}*/
+
