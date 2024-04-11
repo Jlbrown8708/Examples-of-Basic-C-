@@ -483,6 +483,50 @@ using namespace std;
 		}
 	return 0;
 }*/
+		//Example of Dynamic Array:
+
+	/*int main() {
+
+		int size;
+		cout << "Size: ";
+		cin >> size;
+
+		int* myArray = new int[size];
+
+		for (int i = 0; i < size; i++)
+		{
+			cout << "Array[ " << i << " ] ";
+			cin >> myArray[i];
+		}
+		for (int i = 0; i < size; i++) {
+			cout << myArray[i] << " ";
+		}
+		delete[]myArray;
+		myArray = NULL;
+
+		return 0;
+}*/
+
+//Multidimensional Array
+
+/*int main() {
+	
+	int rows, columns;
+	cout << "rows, columns ";
+	cin >> rows >> columns;
+
+	int** table = new int* [rows];      //creating table and rows
+	for (int i = 0; i < rows; i++) {    //creating columns from the rows and table established
+		table[i] = new int[columns];
+	}
+	for (int i = 0; i < rows; i++) {    //deleting the dynamic memory back to the static memory
+		delete[] table[i];
+	}
+	delete [] table;
+	table = NULL;
+
+	return 0;
+}*/
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 ////////////////////////////////////////////////////////////Vectors/////////////////////////////////////////////////////////////////////
@@ -971,6 +1015,7 @@ using namespace std;
 //---------------------------------------------------------------------------------------------------------------------------------------
 
 ///////////////////////////////////////////////////////////////////////Pointers//////////////////////////////////////////////////////////
+
 
 
 
