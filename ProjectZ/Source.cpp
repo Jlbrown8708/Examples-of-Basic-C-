@@ -599,6 +599,22 @@ using namespace std;
 
 //////////////////////////////////////////////////////Structs and Pointers/////////////////////////////////////////////////////////////
 
+/*int main() {
+
+	int n = 5;
+	cout << &n << endl;  //& accesses the address of the variable
+	int* ptr = &n;       // * is to use the pointer and we're using the variable ptr to store the address of the variable &n
+	cout << ptr << endl;  // displays that pointer address of the variable,,,
+	cout << *ptr << endl; //but using *ptr derefences the pointer and gives you the actual varaible as apposed to the address
+	*ptr = 10;             // changing the variable by using the pointer from 5 to 10
+	cout << *ptr << endl;  // now both the derenfced pointer and the actual variable n are now both 10
+	cout << n << endl;
+
+}*/
+
+
+
+
 /*	struct BuddyTheElf {
 		string place;
 		string type;
@@ -1015,3 +1031,49 @@ using namespace std;
 		return 0;
 	}*/
 
+//////////////////////////////////////////////////////////Binary Trees///////////////////////////////////////////////////////////////////
+
+	/*struct Node {
+
+		int data;
+		Node* left;
+		Node* right;
+	};
+
+	Node* createNode(int data) {
+		Node* newNode = new Node();
+		newNode->data = data;
+		newNode->left = newNode->right = nullptr;
+		return newNode;
+ 
+ 
+	 void printTree(Node* root) {
+ 
+		if(root==nullptr)return;
+
+	 // preorder (data,left,right   inorder (left,data,right)  postorder (left,right,data)
+
+		cout<<root->data<<endl;
+		printTree(root->left);
+		printTree(root->right0;
+	 }
+
+	int main() {
+		//Level 1
+		Node* root = createNode(1);
+		//Level 2
+		root->left = createNode(2);
+		root->right = createNode(3);
+		//Level 3
+		root->left->left = createNode(4);
+		root->left -> right = createNode(5);
+		root->right->left = createNode(6);
+		root->right->right = createNode(7);
+		//Level 4
+		root->left->right->left = createNode(9);
+		root->right->right->left = createNode(15);
+
+		printTree(root);
+
+		cin.get();
+	}*/
