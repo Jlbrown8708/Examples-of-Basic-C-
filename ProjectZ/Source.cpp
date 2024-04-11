@@ -468,6 +468,21 @@ using namespace std;
 	return 0;
 }
 */
+	/*int main() {
+		int luckyNumbers[5];
+		//cout << luckyNumbers[2] << endl; // gives variable in array
+		//cout << &luckyNumbers[2] << endl; // gives address in array
+		for (int i = 0; i <= 4; i++) {
+			cout << "Number: ";
+			cin >> luckyNumbers[i];
+		}
+		for (int i = 0; i <= 4; i++) {
+			cout << &luckyNumbers[i] << endl; //prints address for array
+			cout << luckyNumbers[i] << endl;	//prints variables entered 
+
+		}
+	return 0;
+}*/
 // -------------------------------------------------------------------------------------------------------------------------------------
 
 ////////////////////////////////////////////////////////////Vectors/////////////////////////////////////////////////////////////////////
@@ -957,8 +972,23 @@ using namespace std;
 
 ///////////////////////////////////////////////////////////////////////Pointers//////////////////////////////////////////////////////////
 
+
+
+/*void print(void* ptr, char type) {
+	switch (type) {
+	case'i':cout << *((int*)ptr) << endl; break;
+	case'c':cout << *((char*)ptr) << endl; break;
+	}*/
+
+
 /*int main() {
 
+	int n = 5;
+	char letter ='a';
+	print(&number,'i');
+	print(&letter,'c');
+}
+{
 	int n = 5;
 	cout << &n << endl;  //& accesses the address of the variable
 	int* ptr = &n;       // * is to use the pointer and we're using the variable ptr to store the address of the variable &n
@@ -969,6 +999,9 @@ using namespace std;
 	cout << n << endl;
 
 }*/
+
+
+
 	/*void printNumber(int* numberPtr) {
 		cout << *numberPtr << endl;
 	}
