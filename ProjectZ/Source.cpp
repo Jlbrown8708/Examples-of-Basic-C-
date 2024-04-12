@@ -4,6 +4,7 @@
 #include<vector>
 #include<functional>
 #include<algorithm>
+#include<memory>
 
 using namespace std;
 
@@ -1102,6 +1103,87 @@ using namespace std;
 		cout << "Max is" << max << endl;
 
 		system("pause>0");
+		return 0;
+	}*/
+
+	/*Function pointers
+	int add(int a, int b) {           //creating the function
+		return a + b;
+	}
+	int main() {
+		int (*functPtr) (int, int) = add;     //is calling that function but making it a pointer 
+		cout << add(2, 3) << endl;
+		cout << functPtr(3, 4) << endl;
+
+
+	}*/
+
+	//Unique Pointers 
+	/*int main() {
+		unique_ptr<int>unPtr1 = make_unique<int>(25);
+		cout << unPtr1 << endl;							//unique pointersa cant be shared but can be moved 
+		unique_ptr<int>unPtr2 = move(unPtr1);			//moved ownership to different unique pointer
+	}*/
+
+	//Deleting a unique pointer 
+
+	/*class MyClass {
+	public:
+		MyClass() {
+			cout << "Constructor created" << endl;
+		}
+		~MyClass() {
+			cout << "Destructor invoked" << endl;
+		}
+	};
+
+		int main() {
+			{
+				unique_ptr<MyClass>unPtr1 = make_unique<MyClass>();
+			}
+			return 0;
+		}
+		*/
+	//Shared Pointer
+
+	/*class MyClass {
+	public:
+		MyClass() {
+			cout << "Constructor created" << endl;
+		}
+		~MyClass() {
+			cout << "Destructor invoked" << endl;
+		}
+	};
+
+	int main() {
+		{
+			shared_ptr<MyClass>shrPtr1 = make_shared<MyClass>();
+			cout << "Shared count: " << shrPtr1.use_count() << endl;
+			shared_ptr<MyClass>shrPtr2 = shrPtr1;
+			cout << "Shared count: " << shrPtr1.use_count() << endl;
+		}
+		return 0;
+	}*/
+
+	// Weak Pointers
+
+	/*class MyClass {
+	public:
+		MyClass() {
+			cout << "Constructor created" << endl;
+		}
+		~MyClass() {
+			cout << "Destructor invoked" << endl;
+		}
+	};
+
+	int main() {
+		weak_ptr<int> weakPtr1;
+		{	
+			shared_ptr<int>shrPtr1 = make_shared<int>(25);
+			weakPtr1 = shrPtr1;
+		}
 		return 0;
 	}*/
 
