@@ -225,6 +225,31 @@ using namespace std;
 		cout << "Reversed: " << reversedNumber;
 	*/
 
+	///Example 4
+
+	/*	int main() {
+
+			int number;
+			cout << "Please enter a umber";
+			cin >> number;
+
+			if (number == 0) {
+				cout << "number is 0";
+			}
+			else {
+				if (number < 0)
+					number == -1 * number;
+
+				int counter = 0;
+				while (counter > 0) {
+					number /= 10;
+					counter++;
+				}
+				cout << "Number contains " << counter << "digits\n";
+			}
+			return 0;
+
+		}*/
 		
 //----------------------------------------------------------------------------------------------------------------------------------
 
