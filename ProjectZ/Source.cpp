@@ -193,11 +193,25 @@ using namespace std;
 		{	if (counter % 3 == 0 && counter % 5 == 0)
 				cout << counter << " is divisible by 3 and 5\n";
 				counter++;
-		}
-		
+		}*/
+
 		/// Example 2
 
-		int number, reversedNumber = 0;
+		/*int main() {
+
+				int counter = 100;
+
+				while (counter >= 100 && counter <= 500) {
+					if (counter % 3 == 0 || counter % 5 == 0)
+						cout << "counter is: " << counter << endl;
+					counter++;
+				}
+				return 0;
+			}*/
+		
+		/// Example 3
+
+		/*int number, reversedNumber = 0;
 
 		cout << "Enter a number to be reversed: ";
 		cin >> number;
