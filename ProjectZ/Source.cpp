@@ -1297,3 +1297,18 @@ int main() {
 
 	return 0;
 }*/
+//////////////////////////////////////////////////////////Recursion funcions/////////////////////////////////////////////////////////////
+
+/*int recursive_sum(int m, int n) { //m=2, n=4
+	if (m == n)
+		return m;
+	return m + recursive_sum(m + 1, n); //solution going through 2+(3+(4)) ends up equaling 9
+}
+
+int main()
+{
+	int m = 2, n = 4;
+	cout << "Sum = " << recursive_sum (m,n)<< endl;
+
+	return 0;
+}*/
