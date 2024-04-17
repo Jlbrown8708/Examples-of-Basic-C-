@@ -721,9 +721,9 @@ using namespace std;
 	return 0;
 }*/
 
-//-----------------------------------------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------------------------------------------------------//
 
-/////////////////////////////////////////////////Classes with Parent and Child and Inheritance///////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////Classes with Parent and Child and Inheritance///////////////////////////////////////////
  
 	/*class Dog {
 	public:
@@ -807,8 +807,131 @@ using namespace std;
 			sports2.GetInfo();
 		}
 		system("pause>0");
-	};*/
+		};*
+	//---------------------------------------------------------------------------------------------------------------------------------//
 
+	/////////////////////////////////////////////////////Encapsulation///////////////////////////////////////////////////////////////////
+
+		/*#include<iostream>
+		#include<list>
+		using namespace std;
+
+		class Sports {
+		private:
+			string Name;
+			string OwnerName;
+			int playercount;
+			list<string> teamsInDivision;
+
+		public:
+			Sports(string name, string ownerName) {
+				Name = name;
+				OwnerName = ownerName;
+				playercount = 0;
+			}
+			void GetInfo() {
+				cout << "Name: " << Name << endl;
+				cout << "Owners Name: " << OwnerName << endl;
+				cout << "Number Of Players: " << playercount << endl;
+				cout << "Divisional Teams: " << endl;
+				for (string divisionteams : teamsInDivision) {
+					cout << divisionteams << endl;
+				}
+			}
+			void players() {
+				playercount++;
+			}
+			void releasedplayer() {
+				if(playercount>0)
+				playercount--;
+			}
+			void DivisionalTeams(string name){
+				teamsInDivision.push_back(name);
+			}
+
+		};
+
+		int main() {
+			{
+				Sports sports("Texans", "Cal McNair");
+				sports.DivisionalTeams("Jacksonville Jaguars");
+				sports.DivisionalTeams("Indianapolis Colts");
+				sports.DivisionalTeams("Tennesse Titans");
+				sports.players();
+				sports.players();
+				sports.releasedplayer();
+				Sports sports2("Dallas Cowboys", "Jerry Jones");
+
+				sports.GetInfo();
+				sports2.GetInfo();
+			}
+			system("pause>0");
+		};*/
+//-------------------------------------------------------------------------------------------------------------------------------------//
+
+/////////////////////////////////////////////////////////////Inheritance/////////////////////////////////////////////////////////////////
+
+		/*#include<iostream>
+		#include<list>
+		using namespace std;
+
+		class Sports {
+		private:
+			string Name;
+			string OwnerName;
+			int playercount;
+			list<string> teamsInDivision;
+
+		public:
+			Sports(string name, string ownerName) {
+				Name = name;
+				OwnerName = ownerName;
+				playercount = 0;
+			}
+			void GetInfo() {
+				cout << "Name: " << Name << endl;
+				cout << "Owners Name: " << OwnerName << endl;
+				cout << "Number Of Players: " << playercount << endl;
+				cout << "Divisional Teams: " << endl;
+				for (string divisionteams : teamsInDivision) {
+					cout << divisionteams << endl;
+				}
+			}
+			void players() {
+				playercount++;
+			}
+			void releasedplayer() {
+				if (playercount > 0)
+					playercount--;
+			}
+			void DivisionalTeams(string name) {
+				teamsInDivision.push_back(name);
+			}
+		};
+
+		class Sports2:public Sports {
+		public:
+			Sports2(string name, string ownerName):Sports(name, ownerName) {
+
+			}
+			void Practice() {
+				cout << "practicing hitting drills, learning new plays, scrimmaging" << endl;
+			}
+		 };
+
+		int main() {
+			{
+				Sports2 sports2("Cowboys", "Jerry Jones");
+				sports2.DivisionalTeams("Philadelphia Eagles");
+				sports2.DivisionalTeams("New York Giants");
+				sports2.DivisionalTeams("Washington Commanders");
+				sports2.players();
+				sports2.Practice();
+				sports2.GetInfo();
+
+
+				system("pause>0");
+			};*/
 
 //----------------------------------------------------------------------------------------------------------------------------------
 
